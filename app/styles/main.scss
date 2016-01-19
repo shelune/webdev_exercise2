@@ -1,0 +1,147 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// add files to customize bootstrap
+@import "_custom-fonts.scss";
+@import "_custom-variables.scss";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// your own css/scss
+
+// helper classes //
+
+
+.stick-top {
+  position: absolute;
+  top: 0;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+// helper classes end //
+
+a {
+  color:$white-soft;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  color: $white-soft;
+}
+
+ul {
+  list-style: none;
+  outline: none;
+}
+
+.navbar {
+  padding: 0;
+  font-size: 1em;
+  width: 100%;
+  margin: 1em 0 0 2em;
+
+  .brand-logo {
+    font-size: $font-size-h1;
+    margin-left: -30px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    margin: 0 1em;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      width: 100%;
+      content: '';
+    }
+  }
+}
+
+.jumbotron {
+  background-image: url('../images/background-blur.jpg');
+  background-size: cover;
+
+  .container {
+    padding-top: 80px;
+  }
+
+  .header-title {
+    font-size: $font-size-h1;
+    color: $white-soft;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #000;
+  }
+
+  .header-title--complementary {
+    color: $white-soft;
+    font-size: $font-size-h3;
+  }
+
+  .header__buttons {
+    margin-top: 3em;
+  }
+
+  .btn {
+    color: #fff;
+    margin-right: 1em;
+  }
+
+  .btn-bg-transparent {
+    background: transparent;
+  }
+
+  .btn-bordered {
+    border: 2px solid $white-soft;
+  }
+
+  .btn-bg {
+    background: $brand-primary;
+  }
+}
+
+.section-1 {
+  margin-top: 40px;
+
+  .section-title, .section-subtitle {
+    text-align: center;
+  }
+
+  .row {
+    margin-top: 40px;
+  }
+
+  .section-subtitle {
+    font-size: $font-size-h5;
+    color: $gray-light;
+  }
+
+  .section-content__title {
+    color: $brand-primary;
+  }
+
+  .section-content__content {
+    margin-top: 40px;
+  }
+
+  .vcenter {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+// your own css/scss ends
